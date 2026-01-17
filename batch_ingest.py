@@ -42,7 +42,7 @@ SYMBOLS = [
 
 ]
 
-START_DATE = (datetime.now(timezone.utc).date() - timedelta(days=10)).isoformat()
+START_DATE = (datetime.now(timezone.utc).date() - timedelta(days=252)).isoformat()
 END_DATE = datetime.now(timezone.utc).date().isoformat()
 TIMEFRAME = "1Day"
 

@@ -24,7 +24,7 @@ def run_script(path):
     env = os.environ.copy()
     env["RUN_ID"] = RUN_ID
     env["TRADING_MODE"] = MODE
-    p = subprocess.run(["python", path], env=env, capture_output=True, text=True)
+    p = subprocess.run(["python3", path], env=env, capture_output=True, text=True)
     if p.returncode != 0:
         raise RuntimeError(f"{path} failed: {p.stderr.strip()}")
     return p.stdout.strip()
