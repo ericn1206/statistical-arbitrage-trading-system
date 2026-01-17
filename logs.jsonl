@@ -1,0 +1,2 @@
+{"ts": "2026-01-16T07:49:47.550006+00:00", "event": "pnl_start", "run_id": "logtest26", "mode": "paper"}
+{"ts": "2026-01-16T07:49:47+00:00", "event": "pnl_snapshot_upserted", "run_id": "logtest26", "mode": "paper", "equity": 0.0, "daily_pnl": 0.0, "unrealized_pnl": 0.0, "realized_pnl": 0.0, "cash": 0.0}

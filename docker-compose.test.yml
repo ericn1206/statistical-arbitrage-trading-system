@@ -1,0 +1,14 @@
+services:
+  pg_test:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: statarb
+      POSTGRES_PASSWORD: statarb_password
+      POSTGRES_DB: statarb_test_db
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U statarb -d statarb_test_db"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
